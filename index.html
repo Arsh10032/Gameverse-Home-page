@@ -13,313 +13,6 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
-            color: #e0e0e0;
-            min-height: 100vh;
-        }
-
-        /* Navigation */
-        nav {
-            background: rgba(15, 12, 41, 0.95);
-            padding: 1.2rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #00d4ff;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #00d4ff;
-            text-shadow: 0 0 10px #00d4ff;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: #e0e0e0;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: #00d4ff;
-            text-shadow: 0 0 10px #00d4ff;
-        }
-
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 6rem 2rem;
-            background: linear-gradient(180deg, rgba(0, 212, 255, 0.1) 0%, transparent 100%);
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #00d4ff, #0099cc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            color: #b0b0b0;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 0.9rem 2.5rem;
-            background: linear-gradient(135deg, #00d4ff, #0099cc);
-            color: #0f0c29;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
-        }
-
-        .cta-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
-        }
-
-        /* Featured Games */
-        .featured {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .featured h2 {
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            text-align: center;
-            color: #00d4ff;
-        }
-
-        .games-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .game-card {
-            background: rgba(48, 43, 99, 0.6);
-            border: 1px solid #00d4ff;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .game-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
-            border-color: #00ffff;
-        }
-
-        .game-img {
-            width: 100%;
-            height: 180px;
-            background: linear-gradient(135deg, #00d4ff, #0099cc);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-        }
-
-        .game-info {
-            padding: 1.5rem;
-        }
-
-        .game-info h3 {
-            margin-bottom: 0.5rem;
-            color: #00d4ff;
-        }
-
-        .game-info p {
-            color: #a0a0a0;
-            font-size: 0.9rem;
-        }
-
-        /* Footer */
-        footer {
-            background: rgba(15, 12, 41, 0.95);
-            padding: 2rem;
-            text-align: center;
-            border-top: 2px solid #00d4ff;
-            margin-top: 4rem;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-            text-align: left;
-        }
-
-        .footer-section h4 {
-            color: #00d4ff;
-            margin-bottom: 1rem;
-        }
-
-        .footer-section p {
-            color: #a0a0a0;
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid #00d4ff;
-            padding-top: 1.5rem;
-            color: #808080;
-        }
-
-        .creator-info {
-            background: rgba(0, 212, 255, 0.1);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            border-left: 4px solid #00d4ff;
-        }
-
-        .creator-info p {
-            margin: 0.5rem 0;
-            color: #e0e0e0;
-        }
-
-        .creator-info strong {
-            color: #00d4ff;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            nav ul {
-                gap: 1rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">🎮 GameVerse</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#games">Games</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <h1>Welcome to GameVerse</h1>
-        <p>Discover, Play, and Conquer the Ultimate Gaming Experience</p>
-        <a href="#games" class="cta-button">Explore Games Now</a>
-    </section>
-
-    <!-- Featured Games -->
-    <section class="featured" id="games">
-        <h2>Featured Games</h2>
-        <div class="games-grid">
-            <div class="game-card">
-                <div class="game-img">🚀</div>
-                <div class="game-info">
-                    <h3>Space Quest</h3>
-                    <p>Explore infinite galaxies and conquer cosmic challenges in this epic space adventure.</p>
-                </div>
-            </div>
-            <div class="game-card">
-                <div class="game-img">⚔️</div>
-                <div class="game-info">
-                    <h3>Dragon Slayer</h3>
-                    <p>Engage in epic battles and defeat legendary creatures in this fantasy RPG.</p>
-                </div>
-            </div>
-            <div class="game-card">
-                <div class="game-img">🏎️</div>
-                <div class="game-info">
-                    <h3>Speed Racers</h3>
-                    <p>Race against players worldwide and become the ultimate racing champion.</p>
-                </div>
-            </div>
-            <div class="game-card">
-                <div class="game-img">🧩</div>
-                <div class="game-info">
-                    <h3>Mind Maze</h3>
-                    <p>Test your intelligence with challenging puzzles and brain-teasing levels.</p>
-                </div>
-            </div>
-            <div class="game-card">
-                <div class="game-img">🎯</div>
-                <div class="game-info">
-                    <h3>Precision Shot</h3>
-                    <p>Master your aim and compete in intense competitive shooting tournaments.</p>
-                </div>
-            </div>
-            <div class="game-card">
-                <div class="game-img">🌍</div>
-                <div class="game-info">
-                    <h3>World Explorer</h3>
-                    <p>Travel across stunning virtual worlds and uncover hidden treasures.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="footer-content">
-            <div class="creator-info">
-                <p><strong>Created by:</strong> Arsh Ansari</p>
-                <p><strong>Registration No:</strong> 23BCG10032</p>
-                <p><strong>Portal:</strong> GameVerse - Premium Gaming Experience</p>
-            </div>
-            
-            <div class="footer-info">
-                <div class="footer-section"><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameVerse - Your Ultimate Gaming Portal</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #0a0e27 !important;
             color: #e0e0e0;
             min-height: 100vh;
@@ -557,9 +250,24 @@
         <a href="#games" class="cta-button">Explore Games Now</a>
     </section>
 
-    <!-- Featured Games -->
+    <!-- My Games -->
     <section class="featured" id="games">
-        <h2>Featured Games</h2>
+        <h2>My Games</h2>
+        <div class="games-grid">
+            <div class="game-card">
+                <div class="game-img">🎯</div>
+                <div class="game-info">
+                    <h3><a href="games/forest-shooting/" style="color: #00d4ff; text-decoration: none;">Forest Target Shooting</a></h3>
+                    <p>Master your rifle skills in the forest! Hit targets before time runs out. Multiple difficulty levels available.</p>
+                    <a href="games/forest-shooting/" style="color: #00ffff; text-decoration: none; font-weight: bold; margin-top: 0.5rem; display: inline-block;">Play Now →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section class="featured">
+        <h2>Featured Games (Coming Soon)</h2>
         <div class="games-grid">
             <div class="game-card">
                 <div class="game-img">🚀</div>
@@ -590,10 +298,10 @@
                 </div>
             </div>
             <div class="game-card">
-                <div class="game-img">🎯</div>
+                <div class="game-img">🎮</div>
                 <div class="game-info">
-                    <h3>Precision Shot</h3>
-                    <p>Master your aim and compete in intense competitive shooting tournaments.</p>
+                    <h3>Cyber Runner</h3>
+                    <p>Sprint through neon-lit cities and dodge obstacles at lightning speed.</p>
                 </div>
             </div>
             <div class="game-card">
@@ -617,26 +325,6 @@
             
             <div class="footer-info">
                 <div class="footer-section">
-                    <h4>About GameVerse</h4>
-                    <p>GameVerse is your premier destination for gaming. Discover thousands of games, connect with gamers worldwide, and level up your gaming experience.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <p>Games • Community • Tournaments • Support • Privacy Policy</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Us</h4>
-                    <p>Email: support@gameverse.com<br>Discord: GameVerse Community<br>Twitter: @GameVerse</p>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 GameVerse. All rights reserved. | Designed with ❤️ for gamers</p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
                     <h4>About GameVerse</h4>
                     <p>GameVerse is your premier destination for gaming. Discover thousands of games, connect with gamers worldwide, and level up your gaming experience.</p>
                 </div>
